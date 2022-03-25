@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-Poppins: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: var(--button-bg);
+  font: 700 36px var(--font-roboto);
+}
+
+h3 {
+  color: var(--dark-bg);
+  font: 700 26px var(--font-roboto);
+  letter-spacing: 1.2px;
+}
+
+p {
+  color: #000;
+  font: 400 16px var(--font-roboto);
+  letter-spacing: 1.2px;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, var(--dark-bg)), color-stop(50%, var(--dark-bg)));
+  background: linear-gradient(90deg, var(--dark-bg) 100%, var(--dark-bg) 50%);
+  padding: 3%;
+  height: 85vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 320px;
+  border: solid blue;
+}
+
+header nav .logotipo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+header nav .menu {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid;
+}
+
+header nav .menu a {
+  text-decoration: none;
+  color: var(--white);
+  font: 400 18px var(--font-roboto);
+  padding: 10px;
+}
+
+header p {
+  color: var(--white);
+  line-height: 20px;
+}
+
+header section {
+  width: 100%;
+  min-height: 50vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: solid yellow;
+  padding: 4%;
+  gap: 60px;
+}
+
+header section div {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header section div h2, header section div p {
+  margin: 20px;
+}
+
+header section div #main-photo {
+  border: solid red;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header section span {
+  color: var(--white);
+  font: 400 18px var(--font-roboto);
+  gap: 8px;
+}
+
+header #pesquisar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #pesquisar input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+}
+
+header #pesquisar button {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: var(--button-bg);
+  width: 60px;
+}
+
+section.background {
+  background: var(--light-purple);
+  width: 100%;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+  gap: 80px;
+}
+
+section.background div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.background div img {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: auto;
+  max-height: 800px;
+  /* Máximo da altura da imagem */
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+aside {
+  background: var(--light-purple);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 5%;
+}
+
+aside div {
+  padding: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+aside div h3, aside div span {
+  padding: 15px 0;
+}
+
+aside div img {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: auto;
+  max-height: 800px;
+  /* Máximo da altura da imagem */
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#space p {
+  margin: 5px 0 30px  0;
+}
+
+#veja-mais {
+  border: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  padding: 0 3%;
+}
+
+#veja-mais img {
+  gap: 8px;
+}
+
+@media screen and (max-width: 499px) {
+  body {
+    width: 100%;
+  }
+  span {
+    text-align: center;
+  }
+  header {
+    border: solid red;
+    height: 100vh;
+  }
+  header .logotipo {
+    display: block;
+    margin: auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header #pesquisar {
+    display: none;
+  }
+  header h2 {
+    font-size: 26px;
+  }
+  header p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+  header .menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    background-color: #055C56;
+    height: 0;
+    overflow-x: hidden;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+  }
+  header .menu a {
+    width: 100%;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    padding: 20px 0;
+  }
+  header section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 30px 4%;
+  }
+  header section div {
+    width: 100%;
+  }
+  header section div:last-of-type {
+    display: none;
+  }
+  header section article {
+    width: 100%;
+    padding: 15px 0;
+  }
+  header section:nth-of-type(2) article:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section.background {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5%;
+  }
+  aside {
+    border: solid;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */
