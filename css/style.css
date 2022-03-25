@@ -53,7 +53,6 @@ header nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-width: 320px;
-  border: solid blue;
 }
 
 header nav .logotipo img {
@@ -67,7 +66,6 @@ header nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid;
 }
 
 header nav .menu a {
@@ -88,7 +86,6 @@ header section {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  border: solid yellow;
   padding: 4%;
   gap: 60px;
 }
@@ -104,16 +101,9 @@ header section div h2, header section div p {
 }
 
 header section div #main-photo {
-  border: solid red;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-header section span {
-  color: var(--white);
-  font: 400 18px var(--font-roboto);
-  gap: 8px;
 }
 
 header #pesquisar {
@@ -216,12 +206,14 @@ aside div img {
 }
 
 #veja-mais {
-  border: solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 16px;
   padding: 0 3%;
+  color: var(--white);
+  font: 400 18px var(--font-roboto);
+  gap: 8px;
 }
 
 #veja-mais img {
@@ -236,7 +228,6 @@ aside div img {
     text-align: center;
   }
   header {
-    border: solid red;
     height: 100vh;
   }
   header .logotipo {
@@ -270,6 +261,11 @@ aside div img {
   }
   p {
     font-size: 14px;
+  }
+  #veja-mais {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   header .menu {
     position: absolute;
@@ -321,7 +317,6 @@ aside div img {
     padding: 5%;
   }
   aside {
-    border: solid;
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;

@@ -49,7 +49,6 @@ header{
         display: flex;
         justify-content: space-around;
         min-width: 320px;
-        border: solid blue;
 
         .logotipo{
             img{
@@ -62,7 +61,6 @@ header{
         .menu {
             cursor: pointer; 
             display: flex;
-            border: solid;
             
             a {
                 text-decoration: none;
@@ -81,7 +79,6 @@ header{
         width: 100%;
         min-height: 50vh;
         display: inline-flex;
-        border: solid yellow;
         padding: 4%;
         gap: 60px;
           
@@ -94,15 +91,12 @@ header{
             }
             
             #main-photo{
-                border: solid red;
                 width: 100%;
                 object-fit: cover;
             }
         }
         span {
-            color: var(--white);
-            font: 400 18px var(--font-roboto);
-            gap: 8px;
+            
             
         }
     }
@@ -188,10 +182,12 @@ aside {
 }
 
 #veja-mais {
-    border: solid;
     display: flex;
     font-size: 16px;
     padding: 0 3%;
+    color: var(--white);
+    font: 400 18px var(--font-roboto);
+    gap: 8px;
 
     img {
         gap: 8px;
@@ -206,7 +202,6 @@ aside {
         text-align: center;
     }
     header {
-        border: solid red;
         height: 100vh;
         .logotipo {
             display: block;
@@ -242,7 +237,10 @@ aside {
     p{
         font-size: 14px;
     }
-
+    #veja-mais {
+        justify-content: center;
+    }
+    
     header {
         .menu {
             position: absolute;
@@ -287,8 +285,7 @@ aside {
         }
     }
 
-    section.background {
-        
+    section.background { 
         width: 100%;
         object-fit: cover;
         flex-wrap: wrap;
@@ -296,7 +293,6 @@ aside {
     }
 
     aside {
-        border: solid;
         flex: 2;
         width: 100%;
         object-fit: cover;
