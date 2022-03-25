@@ -227,8 +227,11 @@ aside div img {
   span {
     text-align: center;
   }
+  #veja-mais {
+    margin-top: 30px;
+  }
   header {
-    height: 100vh;
+    height: 80vh;
   }
   header .logotipo {
     display: block;
